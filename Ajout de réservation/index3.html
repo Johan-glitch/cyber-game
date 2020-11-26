@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une réservation</title>
+    <link rel="stylesheet" href="style3.css">
+
+    <script type="text/javascript">
+        $('.clockpicker').clockpicker();
+    </script>
+
+    <!-- Intégration de Bootstrap -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Barre de menu -->
+    <div class="topnav animate__animated vanishIn">
+        <a href="file:///home/louise/Bureau/Exercices/Cyber-games/Page%20de%20connexion/index.html">Page de connexion</a>
+        <a href="file:///home/louise/Bureau/Exercices/Cyber-games/Tableau%20de%20bord/index.html">Tableau de bord</a>
+        <a href="file:///home/louise/Bureau/Exercices/Cyber-games/Ajout%20de%20r%C3%A9servation/index3.html">Ajout reservation</a>
+    </div>
+
+    <!-- Ajouter une réservation -->
+    <div class="row">
+        <div class="col-3"></div>
+
+        <div class="col-6 contenu">
+            <div class="contenu_titre">
+                <h2>## Ajouter une réservation ##</h2>
+            </div>
+
+            <div class="contenu_texte">
+                <p>Veuillez compléter le formulaire ci-dessous</p>
+            </div>
+
+            <form style="font-family: Georgia, 'Times New Roman', Times, serif;color: red;">
+
+                <!-- L'utilisateur saisi son nom de famille -->
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="lastname" placeholder="Nom" required>                    
+                </div>
+
+                <!-- L'utilisateur saisi son prénom -->
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="firstname" placeholder="Prénom" required>
+                </div>
+
+                <!-- La date de la réservation -->
+                <div class="form-group">
+                    <label for="birthday">Date de la réservation</label>
+                    <input type="date" class="form-control" id="birthday" name="birthdayInput">
+                </div>
+
+                <!-- L'heure de la réservation -->
+                <div class="form-group">
+                    <label for="time-input">Heure de la réservation</label>
+                    <input type="time" class="form-control" id="time-input">
+                </div>
+
+                <!-- Horaire de la réservation -->
+                <div class="form-group">
+                    <label for="time-input">Horaire de la réservation</label>
+                    <input type="time" class="form-control" id="time-input">
+                    <select name="from" id="from">
+                        <option selected>Sélectionnez votre horraire</option>
+                        <option value="1">9:00</option>
+                        <option value="2">10:00</option>
+                        <option value="3">11:00</option>
+                        <option value="5">5:00</option>
+                      </select>
+                    
+                      <label for="to">To: </label>
+                      <select name="to" id="to">
+                        <option value="1">10:00</option>
+                        <option value="2">11:00</option>
+                        <option value="3">12:00</option>
+                        <option value="4">4:00</option>
+                        <option value="5">5:00</option>
+                      </select>
+                </div>
+                                
+                <!-- Liste de tous les postes -->
+                <div class="form-group">
+                    <label for="select">Sélectionner un ordinateur</label>
+                    <select class="custom-select mr-sm-2" id="select">
+                        <option selected>Ouvrir le menu</option>
+                        <optgroup label="Gamer">
+                            <option value="1">G01</option>
+                            <option value="2">G02</option>
+                            <option value="3">G03</option>
+                        </optgroup>
+
+                        <optgroup label="Bureautique">
+                            <option value="4">B01</option>
+                            <option value="5">B02</option>
+                            <option value="6">B03</option>
+                        </optgroup>
+
+                        <optgroup label="Design">
+                            <option value="7">D01</option>
+                            <option value="8">D02</option>
+                            <option value="9">D03</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <!-- La durée de l'utilisation du poste -->
+                <div class="form-group">
+                    <label for="time">Durée de l'utilisation du poste</label>
+                    <select class="custom-select mr-sm-2" id="select">
+                        <option selected>Ouvrir la liste</option>
+                        <option value="1">1:00</option>
+                        <option value="2">1:30</option>
+                        <option value="3">2:00</option>
+                        <option value="4">2:30</option>
+                        <option value="5">3:00</option>
+                        <option value="6">3:30</option>
+                        <option value="7">4:00</option>
+                        <option value="8">4:30</option>
+                        <option value="9">5:00</option>
+                    </select>
+                </div>
+
+                
+
+                <!-- Bouton pour valider la réservation -->
+                <div class="button">
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-3"></div>
+    </div>
+</body>
+</html>
