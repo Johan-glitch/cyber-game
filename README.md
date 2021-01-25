@@ -13,3 +13,9 @@ Cette photo est la page de connexion sur le poste quand l'utilisateur va se conn
 Cette photo est le tableau de bord, ce qui permet à l'administrateur de voir quels postes informatiques qui restent disponibles, ceux qui sont occupés et ceux qui sont réservés
 
 <a href="https://zupimages.net/viewer.php?id=20/48/uve4.png"><img src="https://zupimages.net/up/20/48/uve4.png" alt="" /></a>
+
+Voici le côté "back-end" du projet, pour la page "Inscription"
+
+<a href="https://zupimages.net/viewer.php?id=21/04/5391.png"><img src="https://zupimages.net/up/21/04/5391.png" alt="" /></a>
+
+<a href="https://zupimages.net/viewer.php?id=21/04/nyn0.png"><img src="https://zupimages.net/up/21/04/nyn0.png" alt="" /></a>
